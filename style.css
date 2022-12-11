@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.slider-area{
+    margin: 30px auto;
+    width: 800px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .slider-area .swiper-slide img{
+    width: 100%;
+  }
+  .swiper-slide{
+    position: relative;
+  }
+  .single-slide a{
+    display:inline-block;
+    padding: 5px;
+  }
+  .slider-area .swiper-slide h2{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+  }
+  .slider-area .swiper-wrapper{
+    padding-bottom: 55px;
+  }
+  .slider-area .swiper-button-next,
+  .slider-area .swiper-button-prev {
+    top: 94%;
+  }
+  .slider-area .swiper-scrollbar {
+    bottom: 26px;
+  }
+  .slider-area .swiper-button-next,
+  .slider-area .swiper-button-prev {
+    height: 40px;
+    width: 40px;
+     background-color: white;
+     border-radius:50%;
+     border: 2px solid #333;
+     z-index: 99;
+  }
+  .slider-area .swiper-button-next:after,
+  .slider-area .swiper-button-prev:after {
+    font-size: 18px;
+    color: #333;
+  }
+  .slider-area .swiper-button-disabled{
+    display: none;
+  }
+  @media (max-width: 991px){
+    .slider-area{
+      width: 100%;
+    }
+    .slider-area .swiper-button-next,
+    .slider-area .swiper-button-prev {
+      top: 96%;
+    }
+  }
+  /* review-area css */
+  .review-area{
+    width: 800px;
+    margin: 30px auto;
+    padding-bottom: 100px;
+  }
+  .review-area .swiper-wrapper{
+    padding-bottom: 55px;
+  }
+  .review-area .swiper-button-next,
+  .review-area .swiper-button-prev {
+    top: 82%;
+  }
+  .review-area .swiper-scrollbar {
+    bottom: 40px;
+  }
+  .review-area .swiper-button-next,
+  .review-area .swiper-button-prev {
+    height: 40px;
+    width: 40px;
+     background-color: white;
+     border-radius:50%;
+     border: 2px solid #333;
+     z-index: 99;
+  }
+  .review-area .swiper-button-next:after,
+  .review-area .swiper-button-prev:after {
+    font-size: 18px;
+    color: #333;
+  }
+  .review-area .swiper-button-disabled{
+    display: none;
+  }
+  .single-review{
+    padding-bottom: 30px;
+  }
+  .single-review{
+    padding-left: 80px;
+    position: relative;
+  }
+  .single-review::after{
+    position: absolute;
+    content: "\f10d";
+    /* height: 30px;
+    width: 30px; */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    top: 0;
+    left: 20px;
+    font-size: 40px;
+  }
+  .single-review h2{
+    font-size: 32px;
+  }
+  .single-review h4{
+    font-size: 20px;
+    margin: 20px 0;
+    color: #999;
+  }
+  .single-review p{
+    font-size: 16px;
+    margin-top: 20px;
+  }
